@@ -6,7 +6,7 @@ package org.example
 import org.example.repository.WeatherRepository
 
 fun main() {
-    val apiKey = "932b2274b13f6456006ec36df4d5f7ab"
+    val apiKey = ""
     val city = "Jakarta"
     val repository = WeatherRepository()
     repository.getWeatherForecast(city, apiKey)
