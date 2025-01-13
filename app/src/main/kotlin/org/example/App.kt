@@ -3,13 +3,11 @@
  */
 package org.example
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
+import org.example.repository.WeatherRepository
 
 fun main() {
-    println(App().greeting)
+    val apiKey = "932b2274b13f6456006ec36df4d5f7ab"
+    val city = "Jakarta"
+    val repository = WeatherRepository()
+    repository.getWeatherForecast(city, apiKey)
 }

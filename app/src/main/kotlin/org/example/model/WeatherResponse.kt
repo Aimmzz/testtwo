@@ -5,7 +5,7 @@ data class WeatherResponse(
 )
 
 data class Weather(
-    val dtTxt: String,
+    val dt_txt: String,
     val main: Main
 )
 
