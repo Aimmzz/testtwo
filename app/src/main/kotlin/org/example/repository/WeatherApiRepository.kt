@@ -48,7 +48,7 @@ class WeatherRepository {
                         dailyTemperatures.entries.take(5).forEach { (dateKey, temp) ->
                             val date = dateFormatForKey.parse(dateKey)
                             val formattedDate = dateFormat.format(date)
-                            println("$formattedDate: ${"%.2f".format(temp)} C")
+                            println("$formattedDate: ${"%.2f".format(temp)}°C")
                         }
                     }
                 } else {
